@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Project to generate recipes for conda packages. Skeletor's main goal is to conquer the mysterious fortress of Castle Grayskull. If he succeeds, Skeletor would be able to conquer not only Eternia, but the whole universe.
+Summary: Project to generate recipes for conda.
 
 
 
