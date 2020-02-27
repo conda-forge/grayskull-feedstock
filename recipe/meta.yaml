@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 
 package:
@@ -8,14 +8,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 654485aae458db4565eee55beaae565bd1417dee266faace458f4fce0f750ad2
+  sha256: 07cf0df0e007c282dc267174ea4855a81abed574fcab6ab2f512a3cfb6c04d81
 
 build:
   number: 0
   noarch: python
   entry_points:
     - grayskull = grayskull.__main__:main
-    - gs = grayskull.__main__:main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -48,7 +47,7 @@ test:
 
 about:
   home: https://pypi.org/project/grayskull/
-  summary: Project to generate recipes for conda packages. Skeletor's main goal is to conquer the mysterious fortress of Castle Grayskull. If he succeeds, Skeletor would be able to conquer not only Eternia, but the whole universe.
+  summary: "Project to generate recipes for conda."
   license: MIT
   license_file: LICENSE
 
