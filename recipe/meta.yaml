@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 135a77bbb875f8804a46b9f5950c6ceb7388a840ad0363f274995481e4e8db0d
+  sha256: af37e46765d126a6a35291ed7709a00f20c9fd7aeb6c5787eee6b68bc62340b3
 
 build:
   number: 0
@@ -48,7 +48,7 @@ test:
 
 about:
   home: https://pypi.org/project/grayskull/
-  summary: "Project to generate recipes for conda."
+  summary: Project to generate recipes for conda.
   license: MIT
   license_file: LICENSE
 
