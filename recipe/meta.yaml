@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6c38a2bb37b1ed75ec5288e7d1c9b210a49422c23a56d34bb635e835e0a8fdb6
+  sha256: 290f329ca7767aea72eaa4cb60c1c4ee3642038af9647c9a355f4fc4d7334b36
 
 build:
   number: 0
