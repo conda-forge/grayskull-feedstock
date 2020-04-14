@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "0.3.2" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0623921690c614edfb8e92304ce80bc1483aa1e71d70cc8a69a02f35bd617dc9
+  sha256: b30e93ab1129b63ed86abcf7e8dde491269017269cf6c850cf09328e4d48c9d6
 
 build:
   number: 0
@@ -25,11 +25,10 @@ requirements:
     - setuptools_scm
   run:
     - colorama
-    - fuzzywuzzy
+    - rapidfuzz
     - pip
     - progressbar2
     - python >=3.7
-    - python-levenshtein
     - requests
     - ruamel.yaml >=0.15.3
     - ruamel.yaml.jinja2
