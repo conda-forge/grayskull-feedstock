@@ -30,6 +30,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-grayskull-green.svg)](https://anaconda.org/conda-forge/grayskull) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/grayskull.svg)](https://anaconda.org/conda-forge/grayskull) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/grayskull.svg)](https://anaconda.org/conda-forge/grayskull) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/grayskull.svg)](https://anaconda.org/conda-forge/grayskull) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-greyskull-green.svg)](https://anaconda.org/conda-forge/greyskull) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/greyskull.svg)](https://anaconda.org/conda-forge/greyskull) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/greyskull.svg)](https://anaconda.org/conda-forge/greyskull) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/greyskull.svg)](https://anaconda.org/conda-forge/greyskull) |
 
 Installing grayskull
 ====================
@@ -40,10 +41,10 @@ Installing `grayskull` from the `conda-forge` channel can be achieved by adding 
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `grayskull` can be installed with:
+Once the `conda-forge` channel has been enabled, `grayskull, greyskull` can be installed with:
 
 ```
-conda install grayskull
+conda install grayskull greyskull
 ```
 
 It is possible to list all of the versions of `grayskull` available on your platform with:
