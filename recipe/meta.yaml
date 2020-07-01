@@ -43,6 +43,7 @@ test:
   commands:
     - pip check
     - grayskull --help
+    - greyskull --help
   requires:
     - pip
 
