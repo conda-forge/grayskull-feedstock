@@ -51,17 +51,17 @@ outputs:
         - pip
 
   - name: greyskull
-   build:
-     noarch: generic
-   requirements:
-     run:
-       - {{ pin_subpackage('grayskull', max_pin="x.x.x") }}
-     test:
-       imports:
-         - grayskull
-       commands:
-         - grayskull --help
-         - greyskull --help
+    build:
+      noarch: generic
+    requirements:
+      run:
+        - {{ pin_subpackage('grayskull', max_pin="x.x.x") }}
+    test:
+      imports:
+        - grayskull
+      commands:
+        - grayskull --help
+        - greyskull --help
 
 about:
   home: https://pypi.org/project/grayskull/
