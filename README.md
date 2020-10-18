@@ -5,11 +5,11 @@ Home: https://pypi.org/project/grayskull/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/grayskull-feedstock/blob/master/LICENSE.txt)
 
 Summary: Project to generate recipes for conda.
 
-
+Development: https://github.com/conda-incubator/grayskull
 
 Current build status
 ====================
