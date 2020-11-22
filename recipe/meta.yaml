@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "0.8.3" %}
+{% set version = "0.8.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9c7d08c584b8d7511dd66ac80140d1f62f6556cc95514f9b34470bdc7daf9c94
+  sha256: 940824f12432ec67e532ba31e52016b0913cedd6392b77b6c4dcc252c901f7f4
 
 build:
   number: 0
@@ -30,7 +30,7 @@ outputs:
         - setuptools_scm
       run:
         - colorama
-        - rapidfuzz >=0.7.6
+        - rapidfuzz >=0.7.6,<0.13.0
         - pip
         - progressbar2 >=3.53.0
         - python >=3.7
