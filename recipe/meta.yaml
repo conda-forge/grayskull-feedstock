@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "0.9.1" %}
+{% set version = "1.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d3b4714479019d02ba80b66ceaaa91f562245649dd239b3070aaa9b5b99a8b86
+  sha256: 66826409c972508eeff65608fa585d8f6768872381e7c016482954a905f9a06c
 
 build:
   number: 0
@@ -25,7 +25,7 @@ outputs:
     requirements:
       host:
         - pip
-        - python >=3.7
+        - python >=3.8
         - setuptools >=30.3.0
         - setuptools_scm
       run:
@@ -33,13 +33,14 @@ outputs:
         - rapidfuzz >=1.7.1
         - pip
         - progressbar2 >=3.53.0
-        - python >=3.7
+        - python >=3.8
         - requests
         - ruamel.yaml >=0.16.10
         - ruamel.yaml.jinja2
         - setuptools >=30.3.0
         - stdlib-list
         - git
+        - conda-souschef >=2.1.1
     test:
       imports:
         - grayskull
