@@ -11,7 +11,7 @@ source:
   sha256: 04902585efcb8e8f67c33ba11adf50cb84ae0491593f5cfa3db6a7701e569e11
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - grayskull = grayskull.__main__:main
@@ -42,7 +42,7 @@ outputs:
         - setuptools >=30.3.0
         - stdlib-list
         - git
-        - conda-souschef >=2.1.1
+        - conda-souschef >=2.1.2
         - pkginfo
     test:
       imports:
