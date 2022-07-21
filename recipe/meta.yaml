@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 803ff00fd4e7473df1ad7680363dcd78410bd8387e72a7d91e4ddc7e63a111d7
+  sha256: b5e345ee0a1b1e14d54c5afe63f54a878a9265b7c6a296d1e3a375dac8016afe
 
 build:
   number: 0
@@ -42,8 +42,10 @@ outputs:
         - setuptools >=30.3.0
         - stdlib-list
         - git
-        - conda-souschef >=2.1.2
+        - conda-souschef >=2.2.0
         - pkginfo
+        - tomli
+        - tomli-w
     test:
       imports:
         - grayskull
