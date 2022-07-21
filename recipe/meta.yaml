@@ -42,7 +42,7 @@ outputs:
         - setuptools >=30.3.0
         - stdlib-list
         - git
-        - conda-souschef >=2.1.2
+        - conda-souschef >=2.2.0
         - pkginfo
         - tomli
         - tomli-w
