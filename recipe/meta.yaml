@@ -11,7 +11,7 @@ source:
   sha256: 43a34bae3bfd5bcac63cf087eaf08db6dcd7cdfe7a23100f288576882428d8f4
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - grayskull = grayskull.__main__:main
@@ -46,6 +46,10 @@ outputs:
         - pkginfo
         - tomli
         - tomli-w
+      run_constrained:  # (Constraints on optional packages)
+        # Required for building recipes containing the ~= operator
+        # Ref: <https://github.com/conda-incubator/grayskull/issues/348#issuecomment-1207205384>
+        - conda-build >=3.20.5
     test:
       imports:
         - grayskull
