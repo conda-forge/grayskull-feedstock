@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 43a34bae3bfd5bcac63cf087eaf08db6dcd7cdfe7a23100f288576882428d8f4
+  sha256: 44057d685def62ff367c6fa5a0ba27fb05470f3d7c24e252b3cf0ddae9be7146
 
 build:
   number: 1
@@ -46,10 +46,6 @@ outputs:
         - pkginfo
         - tomli
         - tomli-w
-      run_constrained:  # (Constraints on optional packages)
-        # Required for building recipes containing the ~= operator
-        # Ref: <https://github.com/conda-incubator/grayskull/issues/348#issuecomment-1207205384>
-        - conda-build >=3.20.5
     test:
       imports:
         - grayskull
