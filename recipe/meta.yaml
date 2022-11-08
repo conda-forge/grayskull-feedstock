@@ -11,7 +11,7 @@ source:
   sha256: e0fab1efd2141b42aded727f1212b326f3972abcf1d0e6d37e89ed07cd76bd00
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - grayskull = grayskull.__main__:main
@@ -31,19 +31,19 @@ outputs:
         - setuptools >=30.3.0
         - setuptools_scm
       run:
-        - colorama
-        - rapidfuzz >=1.7.1
-        - pip
-        - progressbar2 >=3.53.0
         - python >=3.8
         - requests
         - ruamel.yaml >=0.16.10
         - ruamel.yaml.jinja2
-        - setuptools >=30.3.0
         - stdlib-list
-        - git
+        - pip
+        - setuptools >=30.3.0
+        - rapidfuzz >=1.7.1
+        - progressbar2 >=3.53.0
+        - colorama
         - conda-souschef >=2.2.3
         - pkginfo
+        - packaging >=21.3
         - tomli
         - tomli-w
     test:
