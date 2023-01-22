@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "1.8.4" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -11,7 +11,7 @@ source:
   sha256: e0fab1efd2141b42aded727f1212b326f3972abcf1d0e6d37e89ed07cd76bd00
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - grayskull = grayskull.__main__:main
@@ -46,6 +46,7 @@ outputs:
         - packaging >=21.3
         - tomli
         - tomli-w
+        - beautifulsoup4
     test:
       imports:
         - grayskull
