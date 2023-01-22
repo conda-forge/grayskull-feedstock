@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "1.8.4" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e0fab1efd2141b42aded727f1212b326f3972abcf1d0e6d37e89ed07cd76bd00
+  sha256: 6362fcb9bb666a7f21e6daebafae85d2134edc73f1e9a935d0d0aa526e9ea6f9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - grayskull = grayskull.__main__:main
@@ -46,6 +46,7 @@ outputs:
         - packaging >=21.3
         - tomli
         - tomli-w
+        - beautifulsoup4
     test:
       imports:
         - grayskull
