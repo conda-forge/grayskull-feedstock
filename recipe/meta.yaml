@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "2.2.2" %}
+{% set version = "2.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ae97e60742f779ab93888ab074533eddbe2db5ad96792fe8d9748217400de0d8
+  sha256: 826702c4165731c044d30af49230a761ffc753bda8f6be38be9be642fd367037
 
 build:
   number: 0
@@ -47,6 +47,7 @@ outputs:
         - tomli
         - tomli-w
         - beautifulsoup4
+        - semver
     test:
       imports:
         - grayskull
