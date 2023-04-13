@@ -11,7 +11,7 @@ source:
   sha256: 826702c4165731c044d30af49230a761ffc753bda8f6be38be9be642fd367037
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - grayskull = grayskull.__main__:main
@@ -26,28 +26,28 @@ outputs:
       noarch: python
     requirements:
       host:
-        - pip
         - python >=3.8
-        - setuptools >=30.3.0
-        - setuptools_scm
+        - setuptools >=61
+        - setuptools-scm >=6.2
+        - pip
       run:
         - python >=3.8
+        - beautifulsoup4
+        - colorama
+        - conda-souschef >=2.2.3
+        - packaging >=21.3
+        - pip
+        - pkginfo
+        - progressbar2 >=3.53.0
+        - rapidfuzz >=1.7.1
         - requests
         - ruamel.yaml >=0.16.10
         - ruamel.yaml.jinja2
-        - stdlib-list
-        - pip
         - setuptools >=30.3.0
-        - rapidfuzz >=1.7.1
-        - progressbar2 >=3.53.0
-        - colorama
-        - conda-souschef >=2.2.3
-        - pkginfo
-        - packaging >=21.3
+        - semver >=2.13.0,<2.14.dev0
+        - stdlib-list
         - tomli
         - tomli-w
-        - beautifulsoup4
-        - semver
     test:
       imports:
         - grayskull
