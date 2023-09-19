@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "2.3.1" %}
+{% set version = "2.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 41dd1cc94c8b8951571af7628ffa97146ae76e99295918a20d8db84b2f60b5e7
+  sha256: 96eafc2d280eb9fe09db82d08531a1e519a8c13ada411c8f6879885dcf886a86
 
 build:
   number: 0
@@ -39,7 +39,7 @@ outputs:
         - pip
         - pkginfo
         - progressbar2 >=3.53.0
-        - rapidfuzz >=1.7.1
+        - rapidfuzz >=3.0.0
         - requests
         - ruamel.yaml >=0.16.10
         - ruamel.yaml.jinja2
