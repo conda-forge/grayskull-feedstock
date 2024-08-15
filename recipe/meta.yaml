@@ -55,6 +55,8 @@ outputs:
         - pip check
         - grayskull --help
         - greyskull --help
+        - conda-grayskull --help
+        - conda-greyskull --help
       requires:
         - pip
 
