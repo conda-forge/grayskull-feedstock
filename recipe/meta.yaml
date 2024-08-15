@@ -11,7 +11,7 @@ source:
   sha256: 39ec33a74b716c4e3ed876733669866f1b0743a242e16255e772e793598cb2dd
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - grayskull = grayskull.__main__:main
@@ -44,7 +44,7 @@ outputs:
         - ruamel.yaml >=0.16.10
         - ruamel.yaml.jinja2
         - setuptools >=30.3.0
-        - semver >=3.0.0,<4.0.0
+        - semver >=3.0.0,<3.1.dev0
         - stdlib-list
         - tomli
         - tomli-w
@@ -55,6 +55,8 @@ outputs:
         - pip check
         - grayskull --help
         - greyskull --help
+        - conda-grayskull --help
+        - conda-greyskull --help
       requires:
         - pip
 
@@ -73,8 +75,8 @@ outputs:
 
 about:
   home: https://pypi.org/project/grayskull/
-  summary: Project to generate recipes for conda.
-  dev_url: https://github.com/conda-incubator/grayskull
+  summary: Project to generate recipes for conda packages
+  dev_url: https://github.com/conda/grayskull
   license: Apache-2.0
   license_file: LICENSE
 
