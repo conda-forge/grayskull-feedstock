@@ -7,9 +7,9 @@ Home: https://pypi.org/project/grayskull/
 
 Package license: Apache-2.0
 
-Summary: Project to generate recipes for conda.
+Summary: Project to generate recipes for conda packages
 
-Development: https://github.com/conda-incubator/grayskull
+Development: https://github.com/conda/grayskull
 
 Current build status
 ====================
@@ -146,5 +146,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@BastianZim](https://github.com/BastianZim/)
 * [@marcelotrevisani](https://github.com/marcelotrevisani/)
+* [@maresb](https://github.com/maresb/)
 
