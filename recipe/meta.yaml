@@ -11,7 +11,7 @@ source:
   sha256: 39ec33a74b716c4e3ed876733669866f1b0743a242e16255e772e793598cb2dd
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - grayskull = grayskull.__main__:main
