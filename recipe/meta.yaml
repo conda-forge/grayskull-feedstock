@@ -75,8 +75,8 @@ outputs:
 
 about:
   home: https://pypi.org/project/grayskull/
-  summary: Project to generate recipes for conda.
-  dev_url: https://github.com/conda-incubator/grayskull
+  summary: Project to generate recipes for conda packages
+  dev_url: https://github.com/conda/grayskull
   license: Apache-2.0
   license_file: LICENSE
 
