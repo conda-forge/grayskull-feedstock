@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "2.6.0" %}
+{% set version = "2.7.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 39ec33a74b716c4e3ed876733669866f1b0743a242e16255e772e793598cb2dd
+  sha256: 70d9e8da0d68afe25402b5ae584ee2a8238f81e4bc8686034a51403188afd60c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - grayskull = grayskull.__main__:main
@@ -26,12 +26,13 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.8
+        - python >=3.11
         - setuptools >=61
         - setuptools-scm >=6.2
         - pip
       run:
-        - python >=3.8
+        - python >=3.11
+        - conda-recipe-manager >=0.2.1
         - beautifulsoup4
         - colorama
         - conda-souschef >=2.2.3
