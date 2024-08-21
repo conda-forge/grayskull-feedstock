@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "2.7.0" %}
+{% set version = "2.7.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 70d9e8da0d68afe25402b5ae584ee2a8238f81e4bc8686034a51403188afd60c
+  sha256: e721eafec790e029651951fda0c744801b5b6bfcc42d1351c9debedbb3197f9c
 
 build:
   number: 0
@@ -32,10 +32,10 @@ outputs:
         - pip
       run:
         - python >=3.11
-        - conda-recipe-manager >=0.2.1
         - beautifulsoup4
         - colorama
         - conda-souschef >=2.2.3
+        - conda-recipe-manager >=0.2.1
         - packaging >=21.3
         - pip
         - pkginfo
