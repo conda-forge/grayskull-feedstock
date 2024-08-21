@@ -35,6 +35,7 @@ outputs:
         - beautifulsoup4
         - colorama
         - conda-souschef >=2.2.3
+        - conda-recipe-manager >=0.2.1
         - packaging >=21.3
         - pip
         - pkginfo
