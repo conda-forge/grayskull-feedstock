@@ -150,6 +150,3 @@ Feedstock Maintainers
 * [@marcelotrevisani](https://github.com/marcelotrevisani/)
 * [@maresb](https://github.com/maresb/)
 
-
-<!-- dummy commit to enable rerendering -->
-
