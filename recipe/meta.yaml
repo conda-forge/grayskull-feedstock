@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "2.7.1" %}
+{% set version = "2.7.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e721eafec790e029651951fda0c744801b5b6bfcc42d1351c9debedbb3197f9c
+  sha256: ecd76a2fa13e82524e0d7db82d13df802fc8e10c8240556bb1e7c6454d7b92c2
 
 build:
   number: 0
@@ -36,6 +36,7 @@ outputs:
         - colorama
         - conda-souschef >=2.2.3
         - conda-recipe-manager >=0.2.1
+        # CRM is not on PyPI
         - packaging >=21.3
         - pip
         - pkginfo
