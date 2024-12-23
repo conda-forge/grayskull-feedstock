@@ -26,12 +26,12 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python {{ python_min }}
+        - python >=3.9
         - setuptools >=61
         - setuptools-scm >=6.2
         - pip
       run:
-        - python >={{ python_min }}
+        - python >=3.9
         - beautifulsoup4
         - colorama
         - conda-souschef >=2.2.3
