@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "2.7.4" %}
+{% set version = "2.7.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0ae16a64117669b461900b34da48917f40cbd8f868846f9aae1f5d7c0117598d
+  sha256: fcd146d2eea7899ae117c568f32668b13054c2344dd02a372f77b806f743d685
 
 build:
   number: 0
@@ -44,7 +44,6 @@ outputs:
         - ruamel.yaml >=0.16.10
         - ruamel.yaml.jinja2
         - setuptools >=30.3.0
-        - semver >=3.0.0,<3.1.dev0
         - stdlib-list
         - tomli
         - tomli-w
