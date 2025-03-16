@@ -1,5 +1,6 @@
 {% set name = "grayskull" %}
-{% set version = "2.7.6" %}
+{% set version = "2.8.0" %}
+{% set python_min = "3.10" %}
 
 
 package:
@@ -8,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e7828096dc9dc82b7dfad62c646e995aae0e633f9a3666ea762446a0f5ae0432
+  sha256: f0c25140c3a08819a2da054338e452718abaf87e9e0e64fe0ed71ae764e20841
 
 build:
   number: 0
@@ -26,12 +27,12 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.9
+        - python {{ python_min }}
         - setuptools >=61
         - setuptools-scm >=6.2
         - pip
       run:
-        - python >=3.9
+        - python >={{ python_min }}
         - beautifulsoup4
         - colorama
         - conda-souschef >=2.2.3
@@ -57,6 +58,7 @@ outputs:
         - conda-grayskull --help
         - conda-greyskull --help
       requires:
+        - python {{ python_min }}
         - pip
 
   - name: greyskull
