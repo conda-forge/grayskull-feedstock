@@ -1,5 +1,5 @@
 {% set name = "grayskull" %}
-{% set version = "2.9.0" %}
+{% set version = "2.9.1" %}
 {% set python_min = "3.10" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 45ec219d5701756f40505ec79f62393670a8b496fd2408d6f907ce57ba3ca897
+  sha256: 348e3b7cf994ddfec6775d18556ddd3a39df77ddb2855f861a97330a256826b9
 
 build:
   number: 0
