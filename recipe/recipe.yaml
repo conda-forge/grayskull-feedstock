@@ -14,19 +14,18 @@ source:
 
 build:
   number: 1
-  noarch: python
-  python:
-    entry_points:
-      - conda-grayskull = grayskull.__main__:main
-      - conda-greyskull = grayskull.__main__:main
-      - grayskull = grayskull.__main__:main
-      - greyskull = grayskull.__main__:main
 
 outputs:
   - package:
       name: grayskull
     build:
       noarch: python
+      python:
+        entry_points:
+          - conda-grayskull = grayskull.__main__:main
+          - conda-greyskull = grayskull.__main__:main
+          - grayskull = grayskull.__main__:main
+          - greyskull = grayskull.__main__:main
       script:
         - ${{ PYTHON }} -m pip install . --no-deps --no-build-isolation --disable-pip-version-check
     requirements:
@@ -78,15 +77,11 @@ outputs:
       run:
         - ${{ pin_subpackage("grayskull", upper_bound="x.x.x") }}
     tests:
-      - python:
-          imports: grayskull
-          pip_check: true
-          python_version:
-            - ${{ python_min }}.*
-            - 3.13.*
       - script:
           - grayskull --help
           - greyskull --help
+          - conda-grayskull --help
+          - conda-greyskull --help
 
 about:
   summary: Project to generate recipes for conda packages
