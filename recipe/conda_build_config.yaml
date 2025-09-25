@@ -1,3 +1,0 @@
-python_min:
-  # indirectly from conda-recipe-manager
-  - 3.11
