@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "3.0.2"
+  version: "3.1.0"
   # per upstream metadata should be 3.10, but conda-recipe-manager requires 3.11
   python_min: "3.11"
 
@@ -12,7 +12,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/g/grayskull/grayskull-${{ version }}.tar.gz
-  sha256: 8d0f5c6ab1266d42ce8b8ada06d56c290791b2c19d2285067e314af86687a6ad
+  sha256: 6ccbcc7455c08b68d95ed880fe486d87ad321ee483ccb375bfd8163c19a0fdfa
 
 build:
   number: 0
