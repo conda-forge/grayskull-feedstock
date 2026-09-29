@@ -34,7 +34,7 @@ outputs:
       host:
         - pip
         - python ${{ python_min }}.*
-        - setuptools >=61
+        - setuptools >=77
         - setuptools-scm >=6.2
       run:
         - beautifulsoup4
